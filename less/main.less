@@ -1,0 +1,182 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.cus_nav {
+    .navbar-header{
+        >a {
+            width: 50px;
+            background-image: url('../imgs/logo.jpg');
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            background-position: center center;
+            background-size: 80%;
+        }
+    }
+}
+.menu {
+    .list-group-item {
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        &.active,&:focus {
+            background-color: red;
+            color: white;
+        }
+    }
+}
+/* 新闻列表 */
+.news-list {
+    >.news-list-item{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        >.row {
+            >a {
+                color: #333;
+                >.col-xs-5 {
+                    >div.picture {
+                        display: block;
+                        border-radius: 3px;
+                        max-width: 100%;
+                        height: 150px;
+                        background-image: url('../imgs/girls/01.jpg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .col-xs-7 {
+                    position: relative;
+                    height: 150px;
+                    &:hover {
+                        color: red;
+                    }
+                    >h3 {
+                        margin-top: 5px;
+                    }
+                    >p {
+                        height: 60px;
+                        overflow: hidden;
+                        margin-bottom: 0;
+                        text-overflow: ellipsis;
+                    }
+                    >.info {
+                        color: #888;
+                        position: absolute;
+                        bottom: 5px;
+                        >img {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/* 右侧信息 */
+.side-bar-card {
+    background-color: #ccc;
+    margin-top: 15px;
+    border-radius: 5px;
+    .row {
+        padding: 15px;
+        box-sizing: border-box;
+        >.col-xs-5 {
+            >img {
+                width: 100%;
+            }
+        }
+        .col-xs-7 {
+            // background-color: yellow;
+            p {
+                margin-left: -15px;
+                line-height: 15px;
+            }
+        }
+    }
+}
+.news-right {
+    padding: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    .right-info {
+        h4 {
+
+        }
+        .info-list {
+            .info-list-item {
+                padding: 5px 5px;
+                p {
+
+                }
+                span {
+                    color: #ccc;
+                }
+                &:hover {
+                    // color: red;
+                    background-color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+.news {
+    .news-title {
+        line-height: 1.3;
+    }
+    .news-status {
+        .label {
+            opacity: .5;
+        }
+    }
+    .news-body {
+        img {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+    .tuijian {
+        background-color: #f4f4f4;
+        
+        .tuijian-item{
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0 -5px;
+            margin-bottom: 5px;
+            height: 93px;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+            }
+            .col-xs-5{
+                padding-right: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .col-xs-7 {
+                position: relative;
+                height: 93px;
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    color: #888;
+                }
+            }
+        }
+        
+    }
+
+}
+
+
